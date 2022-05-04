@@ -1,9 +1,12 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {useResetRecoilState, useSetRecoilState} from 'recoil';
 import {FullfilButton} from '../../components/button/BasicButton';
+import {userState} from '../Navigator';
 
 const Login = (props: {navigation: any}) => {
   const {navigation} = props;
+  const setIsUser = useSetRecoilState(userState);
   return (
     <View
       style={{
@@ -15,7 +18,8 @@ const Login = (props: {navigation: any}) => {
         text="로그인"
         style={{bottom: 10}}
         onPress={() => {
-          navigation.push('Home');
+          setIsUser(true);
+          navigation.goBack();
         }}
       />
     </View>
