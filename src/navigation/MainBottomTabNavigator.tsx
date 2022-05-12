@@ -15,9 +15,9 @@ const MainBottomTabNavigator = props => {
       tabBar={props => <TabBar {...props} />}
     >
       <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
-      <Tab.Screen name="SalesHelper" component={SalesHelper} />
-      <Tab.Screen name="News" component={News} />
-      <Tab.Screen name="Mypage" component={Mypage} />
+      <Tab.Screen name="SalesHelper" component={SalesHelper} options={{headerShown: false}}/>
+      <Tab.Screen name="News" component={News} options={{headerShown: false}}/>
+      <Tab.Screen name="Mypage" component={Mypage} options={{headerShown: false}}/>
     </Tab.Navigator>
   );
 };

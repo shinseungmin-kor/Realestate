@@ -1,13 +1,14 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import {useSetRecoilState} from 'recoil';
+import { SafeContainer } from '../../components/container/SafeContainer';
 import {userState} from '../Navigator';
 
 const Mypage = (props: {navigation: any}) => {
   const {navigation} = props;
   const setIsUser = useSetRecoilState(userState);
   return (
-    <View>
+    <SafeContainer style={{ backgroundColor: 'white' }}>
       <Text
         onPress={() => {
           setIsUser(false);
@@ -15,7 +16,7 @@ const Mypage = (props: {navigation: any}) => {
         }}>
         Mypage
       </Text>
-    </View>
+      </SafeContainer>
   );
 };
 
