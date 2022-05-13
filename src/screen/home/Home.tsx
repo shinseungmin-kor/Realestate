@@ -22,13 +22,9 @@ const Home = () => {
 
     const {
         home,
-        homeActive,
         lounge,
-        loungeActive,
         judge,
-        judgeActive,
         affinity,
-        affinityActive,
     } = ImageSet.BottomTab;
 
     const actions = [

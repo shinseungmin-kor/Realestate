@@ -1,11 +1,33 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import { SafeContainer } from '../../components/container/SafeContainer';
 
-const SalesHelper = () => {
+const SalesHelper = (props: { navigation: any }) => {
+    const { navigation } = props;
   return (
     <SafeContainer style={{ backgroundColor: 'white' }}>
-      <Text>영업도우미</Text>
+      <TouchableOpacity>
+          <View>
+              <Text onPress={() => {
+                            navigation.navigate('SalesHelperDetail');
+                        }}>영업자료 다운로드</Text>
+          </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
+          <View>
+              <Text>계산기</Text>
+          </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
+          <View>
+              <Text>상담/청약 신청 현황</Text>
+          </View>
+      </TouchableOpacity>
+      <TouchableOpacity>
+          <View>
+              <Text>사용자 회원가입 (문자발송가능)</Text>
+          </View>
+      </TouchableOpacity>
     </SafeContainer>
   );
 };
