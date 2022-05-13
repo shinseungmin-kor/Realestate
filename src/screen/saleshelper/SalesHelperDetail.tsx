@@ -85,7 +85,7 @@ const SalesHelperDetail = () => {
                     <Text>자료 1. 여의도 그랑리세</Text>
                     <Text>업데이트 일 : 2022.03.16</Text>
                 </View>
-                <TouchableOpacity style={{ marginRight: 20 }} onPress={() => { alert('다운로드 하시겠습니까?') }}>
+                <TouchableOpacity style={{ marginRight: 20 }} onPress={downloadTest}>
                     <View>
                         <Text>다운로드</Text>
                     </View>
@@ -96,24 +96,6 @@ const SalesHelperDetail = () => {
                     </View>
                 </TouchableOpacity>
             </View>
-            <Image
-                source={{
-                    uri: REMOTE_IMAGE_PATH,
-                }}
-                style={{
-                    width: '100%',
-                    height: 100,
-                    resizeMode: 'contain',
-                    margin: 5
-                }}
-            />
-            <TouchableOpacity
-                style={styles.button}
-                onPress={downloadTest}>
-                <Text style={styles.text}>
-                    Download Image
-                </Text>
-            </TouchableOpacity>
         </SafeContainer>
     );
 };
