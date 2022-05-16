@@ -6057,6 +6057,11 @@
   "resolved" "https://registry.npmjs.org/react-native-permissions/-/react-native-permissions-3.3.1.tgz"
   "version" "3.3.1"
 
+"react-native-phone-call@^1.0.9":
+  "integrity" "sha512-OPWYg8qeWNG/U4bWGMAKcQTH/ifqJnsvUPCH4lOkvWFHbQS3fbH5M8rFhXCzcfS0GVNzHhZX9ZByMM368TFAUQ=="
+  "resolved" "https://registry.npmjs.org/react-native-phone-call/-/react-native-phone-call-1.0.9.tgz"
+  "version" "1.0.9"
+
 "react-native-safe-area-context@^4.2.5", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-nUil2de1gk/8ZB9IzIxFyGCiKeAYcHzJb/Tks2NzSkev1qH4MNR05DWYDSmW6vLT+y4mospLVyG/H5dyUd+KQQ=="
   "resolved" "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.2.5.tgz"
@@ -6069,6 +6074,11 @@
   dependencies:
     "react-freeze" "^1.0.0"
     "warn-once" "^0.1.0"
+
+"react-native-sms-linking@^1.0.2":
+  "integrity" "sha512-zW3phUBKjas6GN1NAS0VjvJWN9TzFcnbZNauR1hsaquJmUgfTZYUCnANtwihZp6EWIGFKHqJhKIxYsow2oTA4A=="
+  "resolved" "https://registry.npmjs.org/react-native-sms-linking/-/react-native-sms-linking-1.0.2.tgz"
+  "version" "1.0.2"
 
 "react-native-sms@^1.11.0":
   "integrity" "sha512-G5q61qGknNyftN1cFkXfH46UkQWMf3fy/M1fxK/QJzLDJAgCSeBqge62FgJClw1FqzYGSjZeoZvkgpWGDCd3wQ=="

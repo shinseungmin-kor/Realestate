@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
+import News from '../screen/news/News';
 import Calculator from '../screen/saleshelper/Calculator';
 import SalesHelperDetail from '../screen/saleshelper/SalesHelperDetail';
 import MainBottomTabNavigator from './MainBottomTabNavigator';
