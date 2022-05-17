@@ -29,20 +29,6 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-            options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
-{
-  [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                 openURL:url
-                                                 options:options];
-//linking ----->
-   if ([RCTLinkingManager application:application openURL:url sourceApplication:nil annotation:nil]) {
-    return YES;
-  }
-
-  return YES;
-}
 
 {
   RCTAppSetupPrepareApp(application);

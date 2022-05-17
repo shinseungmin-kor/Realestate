@@ -5,6 +5,12 @@ import NavigationBody from '../../components/NavigationBody';
 import NavigationHeader from '../../components/NavigationHeader';
 import { FloatingAction } from "react-native-floating-action";
 import ImageSet from '../../images';
+import styled from 'styled-components';
+import HomePage from './HomePage';
+import EnvironmentPage from './EnvironmentPage';
+import InvestmentPage from './InvestmentPage';
+import ProductPage from './ProductPage';
+import LayoutPage from './LayoutPage';
 
 export namespace DailyType {
     export enum CurrentTab {
@@ -139,6 +145,13 @@ const Home = () => {
                     )
                 }}
             />
+                <ScrollContentContainer>
+                    {currentTab === DailyType.CurrentTab.Home && <HomePage />}
+                    {currentTab === DailyType.CurrentTab.Environment && <EnvironmentPage />}
+                    {currentTab === DailyType.CurrentTab.Investment && <InvestmentPage />}
+                    {currentTab === DailyType.CurrentTab.Product && <ProductPage />}
+                    {currentTab === DailyType.CurrentTab.Layout && <LayoutPage />}
+                </ScrollContentContainer>
             <FloatingAction
                 actions={actions}
                 onPressItem={name => {
@@ -150,3 +163,8 @@ const Home = () => {
 };
 
 export default Home;
+
+const ScrollContentContainer = styled.View({
+    alignItems: 'center',
+    flex: 1,
+});
